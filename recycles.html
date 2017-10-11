@@ -26,12 +26,16 @@ Main Styles
     margin-bottom: 1rem;
     text-align: center;
     background-color: #cccccc;
+    background-color: #f2f2f2;
+    border: 0.1rem solid #b3afaf;
   }
 
   #rechead {
     background-color: black;
     padding: 15px;
     margin: 0;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.9);
+    border-bottom:#00d600 solid 3px;
   }
 
   #rechead #logo img {
@@ -103,6 +107,7 @@ Main Styles
   li,
   a,
   p {
+    margin: 0;
     font-size: 1.2rem;
     text-align: center;
     color: #676262;
@@ -123,22 +128,18 @@ Main Styles
 
   strong {
     font-weight: bold;
-    text-size: 1.7rem;
   }
 
   section {
-    margin: 1rem;
+    margin: 3rem 0;
     padding: 1rem;
-    background-color: #f2f2f2;
-    border: 0.1rem solid #b3afaf;
+
   }
 
   section h1 {
-    background-color: #003300;
-    color: #fff;
-    font-size: 1.8em;
+    font-size: 3rem;
     margin: 0;
-    padding: .8em 0;
+    padding: .2em 0;
     text-align: left;
   }
 
@@ -153,13 +154,22 @@ Main Styles
   }
 
   section h4 {
-    text-align: center;
+    text-align: left;
+    font-size: 1.8rem;
+    margin: .1rem;
   }
 
   section p {
     text-align: left;
+   
   }
-  /*/////////
+
+  section>div{
+    max-width: 1000px;
+    margin: auto;
+  }
+
+/*/////////
 Modules
 ////////*/
 
@@ -180,12 +190,6 @@ Modules
     text-align: left;
   }
 
-  #gallery div {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0 0 15px 0;
-    border: 5px solid black;
-  }
 
   #gallery div img {
     width: 100%;
@@ -193,7 +197,7 @@ Modules
 
   #gallery h3 p {
     font-size: .5em;
-    margin: .4em 0;
+    margin: .1em 0;
   }
 
   #rectext {
@@ -208,49 +212,61 @@ Modules
     margin-bottom: 1rem;
     padding: 1rem;
   }
+
+  .fields {
+    margin: 3rem 0;
+  }
+
 </style>
 <main>
   <header id="rechead">
     <a href="https://stores.ebay.com/1MOTORCYCLEJUNKI/" id="logo">
-      <img src="//mowgul.com/recycles/ReCyclesLogo-First-Try.png">
+      <img src="https://mowgul.com/recycles/ReCyclesLogo-First-Try.png">
     </a>
   </header>
   <section id="listing">
-    <p>
-      <strong id="green">Part</strong>
-    </p>
-    <h1>$ITEMTITLE</h1>
-    <br/>
-    <p>
-      <strong id="green">Condition</strong>
-    </p>
-    <h2>$DESCRIPTION</h2>
-    <br/>
-    <p>
-      <strong id="green">Removed From</strong>
-    </p>
-    <h3>$YEAR $MAKE $MODEL with $MILEAGE miles</h3>
-    <br/>
-    <p id="small">(We list these parts with a broad range of years and models they might interchange with to help the customer find parts
-      that may fit their machine. This is not, a guarantee that this part will fit your machine, so please check with us
-      or your dealer prior to committing to buy so that you can be sure the part you purchase will work for your application.)</p>
-
-
+    <div>
+         
+              <h1>$ITEMTITLE</h1>
+              <div class="fields">
+              <p>
+                <strong id="green">Condition</strong>
+              </p>
+              <h2>$DESCRIPTION</h2>
+              </div>
+          
+          <div class="fields">
+              <p>
+                <strong id="green">Removed From</strong>
+                <h2>$YEAR $MAKE $MODEL with $MILEAGE miles</h2>
+              </p>
+          </div>
+         
+          <div class="fields">
+              
+              <p id="small">(We list these parts with a broad range of years and models they might interchange with to help the customer find parts
+                that may fit their machine. This is not, a guarantee that this part will fit your machine, so please check with us
+                or your dealer prior to committing to buy so that you can be sure the part you purchase will work for your application.)</p>
+          </div>
+          
+    </div>
   </section>
   <section id="gallery">
-    <h3>Gallery
-      <p>(Pictured is the actual item, please take a moment to review the high quality pictures to ensure this will fit your
-        needs.)</p>
-    </h3>
-    <object data="$IMAGE1" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE2" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE3" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE4" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE5" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE6" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE7" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE8" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-    <object data="$IMAGE9" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <div>
+        <h4>Gallery</h4>
+            <p>(Pictured is the actual item, please take a moment to review the high quality pictures to ensure this will fit your
+              needs.)</p>
+          </h3>
+          <img src="$IMAGE1" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE2" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE3" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE4" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE5" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE6" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE7" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE8" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <img src="$IMAGE9" type="image/jpg" style="margin: 1em 0; width: 100%;">
+    </div>
   </section>
   <section>
     <!-- BEGIN LINKED VIDEO -->
@@ -339,19 +355,25 @@ Modules
     <!-- END LINKED VIDEO -->
   </section>
   <section id="shipping">
-    <h3>Shipping</h3>
-    <h4>We ship everyday Monday through Friday, all orders that are paid in full by 8am MST will be shipped out that same day.
-      Tracking numbers are posted the moment your shipping label is generated. All shipments include free insurance and are
-      professionally packaged and guaranteed to arrive in good condition.</h4>
+    <div>
+        <h4>Shipping</h4>
+        <p>We ship everyday Monday through Friday, all orders that are paid in full by 8am MST will be shipped out that same day.
+          Tracking numbers are posted the moment your shipping label is generated. All shipments include free insurance and are
+          professionally packaged and guaranteed to arrive in good condition.</p>
+    </div>
   </section>
   <section id="payment">
-    <h3>Payment</h3>
-    <h4>We accept all forms of payment including, Paypal, Credit card over the phone, by mail and cash in person.</h4>
+    <div>
+        <h4>Payment</h4>
+        <p>We accept all forms of payment including, Paypal, Credit card over the phone, by mail and cash in person.</p>
+    </div> 
   </section>
   <section id="returns">
-    <h3>Returns</h3>
-    <h4>We stand behind every part we sell 100% with our amazing 30 day money back guarantee with no hassle returns! Please see
-      our ebay return policy for details.</h4>
+    <div>
+        <h4>Returns</h4>
+        <p>We stand behind every part we sell 100% with our amazing 30 day money back guarantee with no hassle returns! Please see
+          our ebay return policy for details.</p>
+    </div>
   </section>
 
 
