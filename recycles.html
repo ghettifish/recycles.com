@@ -1,43 +1,53 @@
-  <head>
-    <meta name="viewport" content="width=device-width">
-  </head>
-    <!-- Begin Code for Ebay-->
-    <style> /*//////////
+<head>
+  <meta name="viewport" content="width=device-width">
+</head>
+<!-- Begin Code for Ebay-->
+<style>
+  /*//////////
 Main Styles
 /////////*/
-:root {
-  box-sizing: border-box;
-  font: 16px Helvetica, sans-serif; }
 
-body {
-  margin: 0;
-  overflow: auto;
-  text-align: center;
-  word-wrap: break-word;
-  background-color: #cccccc; }
+  :root {
+    box-sizing: border-box;
+    font: 16px Helvetica, sans-serif;
+  }
 
-main {
-  box-sizing: border-box;
-  margin-bottom: 1rem;
-  text-align: center;
-  background-color: #cccccc; }
+  body {
+    margin: 0;
+    overflow: auto;
+    text-align: center;
+    word-wrap: break-word;
+    background-color: #cccccc;
+  }
 
-#rechead {
-  background-color: black;
-  padding: 15px;
-  margin: 0; }
+  main {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #cccccc;
+  }
+
+  #rechead {
+    background-color: black;
+    padding: 15px;
+    margin: 0;
+  }
+
   #rechead #logo img {
     width: 100%;
     max-width: 400px;
-    min-width: 200px; }
+    min-width: 200px;
+  }
+  /*Nav styles */
 
-/*Nav styles */
-#recnav {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  border-bottom: #333030 solid 0.2em;
-  background-image: linear-gradient(#b3afaf, #817b7b); }
+  #recnav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-bottom: #333030 solid 0.2em;
+    background-image: linear-gradient(#b3afaf, #817b7b);
+  }
+
   #recnav a {
     font: 800 1.2em Helvetica, sans-serif;
     flex-grow: 1;
@@ -50,68 +60,87 @@ main {
     border: #006600 solid 0.125em;
     text-decoration: none;
     word-wrap: break-word;
-    background-image: linear-gradient(#00cc00, #006600); }
-    #recnav a:active {
-      box-shadow: inset 0px 2px 10px #000; }
-    #recnav a:hover {
-      background-image: linear-gradient(#00d600, #00c200); }
+    background-image: linear-gradient(#00cc00, #006600);
+  }
 
-/* Responsive */
-@media all and (max-width: 800px) {
-  :root {
-    box-sizing: border-box;
-    font: 12px Helvetica, sans-serif; }
-  #recnav {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
-    justify-content: space-around;
-    flex-direction: column; }
+  #recnav a:active {
+    box-shadow: inset 0px 2px 10px #000;
+  }
+
+  #recnav a:hover {
+    background-image: linear-gradient(#00d600, #00c200);
+  }
+  /* Responsive */
+
+  @media all and (max-width: 800px) {
+     :root {
+      box-sizing: border-box;
+      font: 12px Helvetica, sans-serif;
+    }
+    #recnav {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+      flex-direction: column;
+    }
     #recnav a {
       padding: .7em;
       margin: .2em;
-      font-size: 1.8em; }
-      #recnav a:active {
-        box-shadow: inset 0px 2px 10px #000; } }
+      font-size: 1.8em;
+    }
+    #recnav a:active {
+      box-shadow: inset 0px 2px 10px #000;
+    }
+  }
+  /* Fonts */
 
-/* Fonts */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-a,
-p {
-  font-size: 1.2rem;
-  text-align: center;
-  color: #676262; }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  a,
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #676262;
+  }
 
-#small {
-  font-size: 1rem; }
+  #small {
+    font-size: 1rem;
+  }
 
-#disclaimer1 {
-  font-style: italic;
-  font-size: 0.8em; }
+  #disclaimer1 {
+    font-style: italic;
+    font-size: 0.8em;
+  }
 
-#green {
-  color: #009900; }
+  #green {
+    color: #009900;
+  }
 
-strong {
-  font-weight: bold;
-  text-size: 1.7rem; }
+  strong {
+    font-weight: bold;
+    text-size: 1.7rem;
+  }
 
-section {
-  margin: 1rem;
-  padding: 1rem;
-  background-color: #f2f2f2;
-  border: 0.1rem solid #b3afaf; }
+  section {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border: 0.1rem solid #b3afaf;
+  }
+
   section h1 {
     background-color: #003300;
     color: #fff;
     font-size: 1.8em;
     margin: 0;
     padding: .8em 0;
-    text-align: left; }
+    text-align: left;
+  }
+
   section h3 {
     color: white;
     padding: 10px;
@@ -119,112 +148,217 @@ section {
     padding: .5em;
     margin: 0;
     text-align: left;
-    font-size: 2em; }
-  section h4 {
-    text-align: center; }
-  section p {
-    text-align: left; }
+    font-size: 2em;
+  }
 
-/*/////////
+  section h4 {
+    text-align: center;
+  }
+
+  section p {
+    text-align: left;
+  }
+  /*/////////
 Modules
 ////////*/
-#listing {
-  padding: 2rem; }
+
+  #listing {
+    padding: 2rem;
+  }
+
   #listing h2 {
     font-size: 1.5rem;
     text-align: left;
-    font-weight: normal; }
+    font-weight: normal;
+  }
 
-#listing p,
-#listing li,
-#rectext p,
-#rectext li {
-  text-align: left; }
+  #listing p,
+  #listing li,
+  #rectext p,
+  #rectext li {
+    text-align: left;
+  }
 
-#gallery div {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0 0 15px 0;
-  border: 5px solid black; }
+  #gallery div {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 0 15px 0;
+    border: 5px solid black;
+  }
+
   #gallery div img {
-    width: 100%; }
+    width: 100%;
+  }
 
-#gallery h3 p {
-  font-size: .5em;
-  margin: .4em 0; }
+  #gallery h3 p {
+    font-size: .5em;
+    margin: .4em 0;
+  }
 
-#rectext {
-  text-align: left; }
+  #rectext {
+    text-align: left;
+  }
+
   #rectext h1 {
     background-color: #003300;
     color: #fff;
     font-size: 1.5rem;
     margin: -1rem;
     margin-bottom: 1rem;
-    padding: 1rem; }
+    padding: 1rem;
+  }
+</style>
+<main>
+  <header id="rechead">
+    <a href="https://stores.ebay.com/1MOTORCYCLEJUNKI/" id="logo">
+      <img src="//mowgul.com/recycles/ReCyclesLogo-First-Try.png">
+    </a>
+  </header>
+  <nav id="recnav">
+    <a href="http://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&amp;requested=1motorcyclejunki&amp;_trksid=p2050430.m2531.l4583&amp;rt=nc">Any Questions? Ask us.</a>
+    <a>Our Ebay Store</a>
+    <a href="http://stores.ebay.com/1motorcyclejunki/pages/why-our-parts-are-the-best/ever">Why our parts are the best</a>
+    <a href="http://stores.ebay.com/1MOTORCYCLEJUNKI/30-Day-Money-Back-Guarantee.html">30-day Money Back Guarantee</a>
+  </nav>
+  <section id="listing">
+    <p>
+      <strong id="green">Part</strong>
+    </p>
+    <h1>$ITEMTITLE</h1>
+    <br/>
+    <p>
+      <strong id="green">Condition</strong>
+    </p>
+    <h2>$DESCRIPTION</h2>
+    <br/>
+    <p>
+      <strong id="green">Removed From</strong>
+    </p>
+    <h3>$YEAR $MAKE $MODEL with $MILEAGE miles</h3>
+    <br/>
+    <p id="small">(We list these parts with a broad range of years and models they might interchange with to help the customer find parts
+      that may fit their machine. This is not, a guarantee that this part will fit your machine, so please check with us
+      or your dealer prior to committing to buy so that you can be sure the part you purchase will work for your application.)</p>
 
+
+  </section>
+  <section id="gallery">
+    <h3>Gallery
+      <p>(Pictured is the actual item, please take a moment to review the high quality pictures to ensure this will fit your
+        needs.)</p>
+    </h3>
+    <object data="$IMAGE1" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE2" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE3" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE4" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE5" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE6" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE7" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE8" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+    <object data="$IMAGE9" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
+  </section>
+  <section>
+    <!-- BEGIN LINKED VIDEO -->
+
+    <div class="ytvideo">
+
+      <a target="_blank" href="http://www.youtube.com/embed/$VIDEO?rel=0">
+
+        <img src="https://img.youtube.com/vi/$VIDEO/0.jpg">
+      </a>
+
+      <p class="yt_ft">Video will open in a new window</p>
+
+      <span class="yt_tag" style="display:none">[isdntekvideo]</span>
+
+    </div>
+
+    <style>
+      .ytvideo {
+        margin: .5em auto;
+        max-width: 480px;
+        font-family: arial;
+        text-align: center;
+        position: relative;
+        min-height: 120px;
+        overflow: hidden;
+        background-color: #555;
+      }
+
+      .ytvideo p {
+        position: absolute;
+        margin: 0;
+        color: white;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+      .ytvideo .yt_hd {
+        font-size: 16px;
+        width: 100%;
+        height: 28px;
+        line-height: 28px;
+        text-align: left;
+        top: 0;
+        left: 0;
+        padding-left: 10px;
+        overflow: hidden;
+      }
+
+      .ytvideo .yt_ft {
+        font-size: 11px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+
+      .ytvideo img {
+        display: block;
+        max-width: 100%;
+        border: 0;
+      }
+
+      .ytvideo a:after {
+        content: "\A0\25BA";
+        position: absolute;
+        width: 60px;
+        height: 50px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 0;
+        border-radius: 10px;
+        color: white;
+        background: rgba(0, 0, 0, .6);
+        font-size: 24px;
+        line-height: 50px;
+        cursor: pointer;
+      }
+
+      .ytvideo a:hover:after {
+        background: #CC181E;
+      }
     </style>
-    <main>
-      <header id="rechead"><a href="https://stores.ebay.com/1MOTORCYCLEJUNKI/" id="logo"><img src="//mowgul.com/recycles/ReCyclesLogo-First-Try.png"></a></header>
-<nav id="recnav"><a href="http://contact.ebay.com/ws/eBayISAPI.dll?FindAnswers&amp;requested=1motorcyclejunki&amp;_trksid=p2050430.m2531.l4583&amp;rt=nc">Any Questions? Ask us.</a><a>Our Ebay Store</a><a href="http://stores.ebay.com/1motorcyclejunki/pages/why-our-parts-are-the-best/ever">Why our parts are the best</a><a href="http://stores.ebay.com/1MOTORCYCLEJUNKI/30-Day-Money-Back-Guarantee.html">30-day Money Back Guarantee</a>
-</nav>
-<section id="listing">
-  <h2><strong id="green">Part</strong> </h2>
-  <h2>$ITEMTITLE</h2><br/>
-  <h2><strong id="green">Condition</strong></h2>
-  <h2>$DESCRIPTION</h2><br/>
-  <h2><strong id="green">Removed From</strong> </h2>
-  <h2>$YEAR $MAKE $MODEL with $MILEAGE miles</h2><br/>
-  <p id="small">(We list these parts with a broad range of years and models they might interchange with to help the customer find parts that may fit their machine. This is not, a guarantee that this part will fit your machine, so please check with us or your dealer prior to committing to buy so that you can be sure the part you purchase will work for your application.)</p>
+
+    <!-- END LINKED VIDEO -->
+  </section>
+  <section id="shipping">
+    <h3>Shipping</h3>
+    <h4>We ship everyday Monday through Friday, all orders that are paid in full by 8am MST will be shipped out that same day.
+      Tracking numbers are posted the moment your shipping label is generated. All shipments include free insurance and are
+      professionally packaged and guaranteed to arrive in good condition.</h4>
+  </section>
+  <section id="payment">
+    <h3>Payment</h3>
+    <h4>We accept all forms of payment including, Paypal, Credit card over the phone, by mail and cash in person.</h4>
+  </section>
+  <section id="returns">
+    <h3>Returns</h3>
+    <h4>We stand behind every part we sell 100% with our amazing 30 day money back guarantee with no hassle returns! Please see
+      our ebay return policy for details.</h4>
+  </section>
 
 
-</section>
-<section id="gallery">
-  <h3>Gallery
-    <p>(Pictured is the actual item, please take a moment to review the high quality pictures to ensure this will fit your needs.)</p>
-  </h3>
-  <object data="$IMAGE1" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE2" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE3" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE4" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE5" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE6" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE7" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE8" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-  <object data="$IMAGE9" type="image/jpg" style="margin: 1em 0; width: 100%;"></object>
-</section>
-<section>
- <!-- BEGIN LINKED VIDEO -->
-
-      <div class="ytvideo">
-
-         <a target="_blank" href="http://www.youtube.com/embed/$VIDEO?rel=0">
-
-         <img src="https://img.youtube.com/vi/$VIDEO/0.jpg"></a>
-
-         <p class="yt_ft">Video will open in a new window</p>
-
-         <span class="yt_tag" style="display:none">[isdntekvideo]</span>
-
-      </div>
-
-      <style> .ytvideo { margin:.5em auto; max-width:480px; font-family:arial; text-align:center; position:relative; min-height:120px; overflow:hidden; background-color:#555; } .ytvideo p { position:absolute; margin:0; color:white; background-color:rgba(0,0,0,.5); } .ytvideo .yt_hd { font-size:16px; width:100%; height:28px; line-height:28px; text-align:left; top:0; left:0; padding-left:10px; overflow:hidden; } .ytvideo .yt_ft { font-size:11px; width:100%; bottom:0; left:0; } .ytvideo img { display:block; max-width:100%; border:0; } .ytvideo a:after { content:"\A0\25BA"; position:absolute; width:60px; height:50px; left:0; top:0; right:0; bottom:0; margin:auto; border:0; border-radius:10px; color:white; background:rgba(0,0,0,.6); font-size:24px; line-height:50px; cursor:pointer; } .ytvideo a:hover:after { background:#CC181E; }</style>
-
-      <!-- END LINKED VIDEO -->
-</section>
-<section id="shipping">
-  <h3>Shipping</h3>
-  <h4>We ship everyday Monday through Friday, all orders that are paid in full by 8am MST will be shipped out that same day. Tracking numbers are posted the moment your shipping label is generated. All shipments include free insurance and are professionally packaged and guaranteed to arrive in good condition.</h4>
-</section>
-<section id="payment">
-  <h3>Payment</h3>
-  <h4>We accept all forms of payment including, Paypal, Credit card over the phone, by mail and  cash in person.</h4>
-</section>
-<section id="returns">
-  <h3>Returns</h3>
-  <h4>We stand behind every part we sell  100% with our amazing 30 day money back guarantee with no hassle returns!  Please see our ebay return policy for details.</h4>
-</section>
-
-
-<!-- End Code for Ebay-->
-    </main>
+  <!-- End Code for Ebay-->
+</main>
