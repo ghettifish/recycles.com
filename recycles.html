@@ -43,7 +43,9 @@ Main Styles
     max-width: 400px;
     min-width: 200px;
   }
-
+  .image{
+    max-width: 100%;
+  }
   /*Nav styles */
   #recnav {
     display: flex;
@@ -70,18 +72,6 @@ Main Styles
 
   #recnav a:active {
     box-shadow: inset 0px 2px 10px #000;
-  }
-
-  img[src="/*{{ */$IMAGE1/* }}*/"],
-  img[src="/*{{ */$IMAGE2/* }}*/"],
-  img[src="/*{{ */$IMAGE3/* }}*/"],
-  img[src="/*{{ */$IMAGE4/* }}*/"],
-  img[src="/*{{ */$IMAGE5/* }}*/"],
-  img[src="/*{{ */$IMAGE6/* }}*/"],
-  img[src="/*{{ */$IMAGE7/* }}*/"],
-  img[src="/*{{ */$IMAGE8/* }}*/"],
-  img[src="/*{{ */$IMAGE9/* }}*/"] {
-   display: none;
   }
 
   #recnav a:hover {
@@ -269,15 +259,15 @@ Modules
             <p>(Pictured is the actual item, please take a moment to review the high quality pictures to ensure this will fit your
               needs.)</p>
           </h3>
-          <img src="$IMAGE1" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE2" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE3" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE4" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE5" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE6" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE7" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE8" type="image/jpg" style="margin: 1em 0; width: 100%;">
-          <img src="$IMAGE9" type="image/jpg" style="margin: 1em 0; width: 100%;">
+          <object class ="image" data="$IMAGE1" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE2" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE3" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE4" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE5" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE6" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE7" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE8" type="image/jpg"></object>
+          <object class ="image" data="$IMAGE9" type="image/jpg"></object>
     </div>
   </section>
   <section>
@@ -285,7 +275,7 @@ Modules
 
     <div class="ytvideo">
 
-      <a target="_blank" href="http://www.youtube.com/embed/$VIDEO?rel=0">
+      <a target="_blank" href="https://www.youtube.com/watch?v=$VIDEO">
 
         <img src="https://img.youtube.com/vi/$VIDEO/0.jpg">
       </a>
